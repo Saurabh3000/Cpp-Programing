@@ -61,16 +61,47 @@ class HDFC
 
 int main()
 {
-	HDFC b1;
+	HDFC h1;
 	
-	b1.getData();
-	b1.showData();
+	int ch,lch;
 	
-	b1.deposit();
-	b1.show_balance();
-	
-	b1.withdraw();
-	b1.show_balance();
+	do
+	{
 		
+	cout<<"\n 1. Get Data";
+	cout<<"\n 2. Show Data";
+	cout<<"\n 3. Deposit";
+	cout<<"\n 4. Withdraw";
+	
+	cout<<"\n Enter Operation No = ";
+	cin>>ch;
+	
+	switch(ch)
+	{	
+	
+	case 1: h1.getData();
+			break;
+	
+	case 2: h1.showData();
+			break;
+	
+	case 3: h1.deposit();
+			h1.show_balance();
+			break;
+	
+	case 4: h1.withdraw();
+			h1.show_balance();
+			break;
+			
+	default: cout<<"\n You Enter Wrong Operation No ";
+					break;
+					
+	}
+	
+	cout<<"\n Press - 1 For Continue \n Press - 2 For Exit";
+	cin>>lch;
+	
+	}while(lch==1);
+	
 	return 0;
 }
