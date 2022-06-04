@@ -1,0 +1,5 @@
+
+ Employee Name is = Dinesh
+ Employee Wages is = 200
+ Employee Working Days = 30
+ Employee Payment is = 6000
